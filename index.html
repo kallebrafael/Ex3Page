@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFlow | Solicite uma Proposta Gratuita</title>
+    <!-- 2 Google Fonts diferentes: Montserrat (Títulos) e Inter (Corpo/Formulário) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com navegação alinhada à direita -->
+    <header class="navbar">
+        <div class="container nav-flex">
+            <a href="#" class="brand">TechFlow</a>
+            <nav class="nav-links">
+                <a href="#proposta">Contato</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Faixa decorativa em gradiente -->
+    <div class="gradient-strip"></div>
+
+    <!-- Seção Principal com Formulário -->
+    <main id="proposta" class="main-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <!-- Cabeçalho do Card Centralizado -->
+                <div class="form-header">
+                    <h1>Solicite uma Proposta Gratuita</h1>
+                    <p>Preencha o formulário abaixo e nossa equipe entrará em contato em breve</p>
+                </div>
+
+                <!-- Formulário com campos alinhados à esquerda -->
+                <form class="proposal-form" onsubmit="event.preventDefault(); alert('Proposta enviada com sucesso!');">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="seu@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" placeholder="Nome da empresa">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" placeholder="(11) 99999-9999" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servico">Qual serviço você precisa?</label>
+                        <select id="servico" required>
+                            <option value="">Selecione um serviço</option>
+                            <option value="web">Desenvolvimento Web & Landing Pages</option>
+                            <option value="uiux">Design UI/UX & Prototipagem</option>
+                            <option value="marketing">Marketing Digital & SEO</option>
+                            <option value="sistema">Sistema Web Sob Medida</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orcamento">Orçamento Estimado</label>
+                        <input type="text" id="orcamento" placeholder="R$ - Valor aproximado">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="detalhes">Conte-nos sobre seu projeto</label>
+                        <textarea id="detalhes" rows="4" placeholder="Descreva brevemente seu projeto e objetivos..."></textarea>
+                    </div>
+
+                    <div class="checkbox-box">
+                        <input type="checkbox" id="consentimento" required>
+                        <label for="consentimento">Concordo em receber comunicações de marketing da TechFlow</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">ENVIAR PROPOSTA</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer com informações alinhadas à direita -->
+    <footer id="sobre" class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col align-left">
+                <h3>TechFlow</h3>
+                <p>Transformando ideias em soluções digitais inovadoras desde 2020.</p>
+            </div>
+
+            <div class="footer-col align-center">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#proposta">Contato</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col align-right">
+                <h4>Contato</h4>
+                <p>contato@techflow.com</p>
+                <p>(11) 99999-9999</p>
+                <p><strong>São Paulo, SP - Brasil</strong></p>
+
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">in</a>
+                    <a href="#" aria-label="X">𝕏</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
